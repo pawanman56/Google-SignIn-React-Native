@@ -20,6 +20,12 @@ npm start    //or yarn start
 ### Steps
 Each steps are branch that will guide you to how to setup **Google SignIn** in your **React Native app**, step by step.
 
-1. [Initial step][1]:  Set up app `react-native init *YourAppName*`
+1. [Initial step][0]:  Set up app `react-native init *YourAppName*`
+2. [Step-1][1]:  Install `react-native-google-signin`
+    ```
+    npm i --save react-native-google-signin
+    ```
 
-[1]: 
+
+[0]: https://github.com/pawanman56/Google-SignIn-React-Native/commits/step-0
+[1]: https://github.com/pawanman56/Google-SignIn-React-Native/commits/step-0
