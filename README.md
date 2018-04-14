@@ -25,11 +25,16 @@ Each steps are branch that will guide you to how to setup **Google SignIn** in y
 
     ```
     npm i --save react-native-google-signin
+
+    react-native link react-native-google-signin
     ```
-* [Step-2]: Add main file:
+* [Step-2][2]: Add main file:
 	* Create file `App.js` in new folder `app` in your project directory.
 	* Reference your main file in `index.js`.
+* [Step-3][3]: Render Google SignIn button:
+  * In your `App.js` file, render the button for **Google SignIn**. You can view the code in commit of this step.
 
 [0]: https://github.com/pawanman56/Google-SignIn-React-Native/commits/step-0
 [1]: https://github.com/pawanman56/Google-SignIn-React-Native/commits/step-1
 [2]: https://github.com/pawanman56/Google-SignIn-React-Native/commits/step-2
+[3]: https://github.com/pawanman56/Google-SignIn-React-Native/commits/step-3
