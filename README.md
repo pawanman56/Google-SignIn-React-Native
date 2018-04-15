@@ -39,21 +39,32 @@ Each steps are branch that will guide you to how to setup **Google SignIn** in y
     ```
     keytool -list -v -keystore ~/.android/debug.keystore
     ```
-  * **Second**: Add new project in you Firebase Console.
+  * **Second**: [Start Integrating Google Sign-In into Your Android App](https://developers.google.com/identity/sign-in/android/start-integrating)
+  * **Third**: Add new project in you Firebase Console.
 
     * `Project Overview` > `Project Setting`
     
-    * Add App in `Your App`. Fill up the required fields and `Register App`.
+    * Add App in `Your App` . Fill up the required fields and `Register App` .
 
-    * Then download config file `google-service.json`.
+    * Then download config file `google-service.json` .
 
-    * Move the `google-service.json` file in `android`>`app`.
+    * Move the `google-service.json` file in `android` > `app` .
+  * **Fourth**: Create project in your **Google Developer Console**
+    * In your `API` > `Credentials` > `OAuth consent screen`
+    * Then enter your product name.
+    * Select `Web Application` as your **Application type**, and `Create`
+    * Then you'll have your `Client Id` and `Client Secret` 
+* [Step-5][5]: Setup **SignIn** button action.
+  * Define `onPress` call on **Google SinIn** button.
+  * Setup `webClientId` in your `componentDidMount` method.
+
 
 [0]: https://github.com/pawanman56/Google-SignIn-React-Native/commits/step-0
 [1]: https://github.com/pawanman56/Google-SignIn-React-Native/commits/step-1
 [2]: https://github.com/pawanman56/Google-SignIn-React-Native/commits/step-2
 [3]: https://github.com/pawanman56/Google-SignIn-React-Native/commits/step-3
 [4]: https://github.com/pawanman56/Google-SignIn-React-Native/commits/step-4
+[5]: https://github.com/pawanman56/Google-SignIn-React-Native/commits/step-5
 
 [android]: https://github.com/devfd/react-native-google-signin/blob/master/android-guide.md
 [ios]: https://github.com/devfd/react-native-google-signin/blob/master/ios-guide.md
