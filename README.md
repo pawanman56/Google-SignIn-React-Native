@@ -33,8 +33,27 @@ Each steps are branch that will guide you to how to setup **Google SignIn** in y
 	* Reference your main file in `index.js`.
 * [Step-3][3]: Render Google SignIn button:
   * In your `App.js` file, render the button for **Google SignIn**. You can view the code in commit of this step.
+* [Step-4][4]: Setup and Initialize your project:
+  * Follow the documentation for [Android][android] and [IOS][ios]. (this project focus on android)
+  * **First**: Get SHA1 fingerprint in your local machine.
+    ```
+    keytool -list -v -keystore ~/.android/debug.keystore
+    ```
+  * **Second**: Add new project in you Firebase Console.
+
+    * `Project Overview` > `Project Setting`
+    
+    * Add App in `Your App`. Fill up the required fields and `Register App`.
+
+    * Then download config file `google-service.json`.
+
+    * Move the `google-service.json` file in `android`>`app`.
 
 [0]: https://github.com/pawanman56/Google-SignIn-React-Native/commits/step-0
 [1]: https://github.com/pawanman56/Google-SignIn-React-Native/commits/step-1
 [2]: https://github.com/pawanman56/Google-SignIn-React-Native/commits/step-2
 [3]: https://github.com/pawanman56/Google-SignIn-React-Native/commits/step-3
+[4]: https://github.com/pawanman56/Google-SignIn-React-Native/commits/step-4
+
+[android]: https://github.com/devfd/react-native-google-signin/blob/master/android-guide.md
+[ios]: https://github.com/devfd/react-native-google-signin/blob/master/ios-guide.md

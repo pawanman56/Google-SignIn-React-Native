@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "121162566312",
+    "firebase_url": "https://custom-unison-200710.firebaseio.com",
+    "project_id": "custom-unison-200710",
+    "storage_bucket": "custom-unison-200710.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121162566312:android:328fce0f95e455bf",
+        "android_client_info": {
+          "package_name": "com.rnapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "121162566312-ejpq4e1q8a6hto3nv1uma9a5lnlpnhfo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rnapp",
+            "certificate_hash": "59eadf4edd6631521acc02e26251e1e1f1ebd1db"
+          }
+        },
+        {
+          "client_id": "121162566312-blvrrjs1t16uakek1rhpv11i0p7mr7go.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "121162566312-o5hji8fp2a4thuhqveakf9f63tbi3a8f.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "121162566312-ldll9tn6fkjqu3qilgcpgrbgkfe8lo4o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIEy8SjdRqEVI5GVVmuY3IA5nHtgHIoEU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "121162566312-blvrrjs1t16uakek1rhpv11i0p7mr7go.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
