@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 import { GoogleSignin, GoogleSigninButton } from 'react-native-google-signin';
 
 class App extends Component {
@@ -16,16 +16,37 @@ class App extends Component {
   }
 
   render() {
-    return(
-      <View style={styles.container}>
-        <GoogleSigninButton 
-          style={{ width: 320, height: 54 }}
-          size={GoogleSigninButton.Size.Wide}
-          color={GoogleSigninButton.Color.Light}
-          onPress={() => {this._signIn();}}
-        />
-      </View>
-    );
+    if (!this.state.user) {
+      return (
+        <View style={styles.container}>
+          <GoogleSigninButton 
+            style={{width: 320, height: 52}} 
+            color={GoogleSigninButton.Color.Light} 
+            size={GoogleSigninButton.Size.Wide} 
+            onPress={() => { this._signIn(); }}
+          />
+        </View>
+      );
+    }
+
+    if (this.state.user) {
+      return (
+        <View style={styles.container}>
+          <Text style={{fontSize: 18, fontWeight: 'bold', marginBottom: 20}}>
+            Welcome {this.state.user.name}
+          </Text>
+          <Text>
+            Your email is: {this.state.user.email}
+          </Text>
+
+          <TouchableOpacity onPress={() => {this._signOut(); }}>
+            <View style={{marginTop: 50}}>
+              <Text>Log out</Text>
+            </View>
+          </TouchableOpacity>
+        </View>
+      );
+    }
   }
 
   async _setupGoogleSignin() {
@@ -53,6 +74,13 @@ class App extends Component {
     })
     .catch((err) => {
       console.log('WRONG SIGNIN', err);
+    })
+    .done();
+  }
+
+  _signOut() {
+    GoogleSignin.revokeAccess().then(() => GoogleSignin.signOut()).then(() => {
+      this.setState({user: null});
     })
     .done();
   }

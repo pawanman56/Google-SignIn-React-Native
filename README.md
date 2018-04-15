@@ -55,8 +55,14 @@ Each steps are branch that will guide you to how to setup **Google SignIn** in y
     * Select `Web Application` as your **Application type**, and `Create`
     * Then you'll have your `Client Id` and `Client Secret` 
 * [Step-5][5]: Setup **SignIn** button action.
-  * Define `onPress` call on **Google SinIn** button.
+  * Define `onPress` call on **Google SignIn** button.
   * Setup `webClientId` in your `componentDidMount` method.
+* [Step-6][6]: Setup **SignOut** button action.
+  * Create and define `onPress` call on **Google SignOut** button.
+  * Conditional rendering as per the state of `user`
+
+### Reference
+* [devfd/react-native-google-signin](https://github.com/devfd/react-native-google-signin/tree/master/example)
 
 
 [0]: https://github.com/pawanman56/Google-SignIn-React-Native/commits/step-0
@@ -65,6 +71,7 @@ Each steps are branch that will guide you to how to setup **Google SignIn** in y
 [3]: https://github.com/pawanman56/Google-SignIn-React-Native/commits/step-3
 [4]: https://github.com/pawanman56/Google-SignIn-React-Native/commits/step-4
 [5]: https://github.com/pawanman56/Google-SignIn-React-Native/commits/step-5
+[6]: https://github.com/pawanman56/Google-SignIn-React-Native/commits/step-6
 
 [android]: https://github.com/devfd/react-native-google-signin/blob/master/android-guide.md
 [ios]: https://github.com/devfd/react-native-google-signin/blob/master/ios-guide.md
